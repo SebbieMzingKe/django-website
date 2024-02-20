@@ -1,0 +1,15 @@
+{% comment %} <!-- fruit_search.html -->
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+</form>
+
+{% if fruits %}
+    <ul>
+        {% for fruit in fruits %}
+            <li>{{ product.name }} - {{ product.description }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No fruits found.</p>
+{% endif %} {% endcomment %}
